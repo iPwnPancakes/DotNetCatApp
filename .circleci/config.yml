@@ -6,6 +6,7 @@ version: 2.1
 # See: https://circleci.com/docs/2.0/configuration-reference/#jobs
 jobs:
   build-and-test:
+    resource_class: small
     docker:
       - image: mcr.microsoft.com/dotnet/sdk:6.0
     steps:
